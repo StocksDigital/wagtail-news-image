@@ -1,0 +1,11 @@
+/*Colors*/
+@value wagtail_green #43b1b0;
+@value wagtail_dark_green #358c8b;
+@value wagtail_darkest_green #2b6f6e;
+
+@value background_black #1a1a1a;
+@value background_dark #333;
+@value background_dark_hover hsla(0,0%,39%,.15);
+@value background_grey #d9d9d9;
+
+@value text_grey #8c8c8c;

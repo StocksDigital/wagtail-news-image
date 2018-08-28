@@ -1,0 +1,24 @@
+@value wagtail_dark_green, background_grey, text_grey from './colors.css';
+@value input_height from './sizes.css';
+
+
+.button {
+  width: 6rem;
+  height: input_height;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: wagtail_dark_green;
+  border-color: wagtail_dark_green;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button[disabled]:hover {
+  background-color: background_grey;
+  border-color: background_grey;
+  color: text_grey;
+  cursor: not-allowed;
+}

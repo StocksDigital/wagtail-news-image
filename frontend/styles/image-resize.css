@@ -1,0 +1,33 @@
+.controls {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+.previewWrapper {
+    background-color: #fff;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+    padding: 2rem;
+}
+
+.preview {
+    width: 730px;
+    margin: 0 auto;
+}
+
+.preview p {
+    margin-bottom: 20;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.preview img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 3rem auto;
+}

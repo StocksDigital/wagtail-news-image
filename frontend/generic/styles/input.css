@@ -1,0 +1,128 @@
+@value wagtail_green, wagtail_dark_green from './colors.css';
+@value input_height from './sizes.css';
+
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: input_height;
+  margin-bottom: 0.6rem;
+}
+
+.label {
+  color: #fff;
+  background-color: wagtail_green;
+  border: 1px solid wagtail_green;
+  display: flex;
+  text-transform: uppercase;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  min-width: 6rem;
+  border-radius: 3px 0 0 3px;
+}
+
+.inputWrapper input {
+  border-radius: 0;
+  padding: .7em 1em;
+  border-radius: 0 3px 3px 0;
+}
+
+.invalid {
+  color: #f33;
+  outline: 3px solid #f33;
+}
+.invalid:focus {
+  outline: 3px solid #f33;
+}
+
+.inputWrapper input {
+  height: input_height;
+}
+
+.inputWrapper input::-webkit-input-placeholder {
+   font-style: italic;
+   color: #aaa;
+}
+.inputWrapper input:-moz-placeholder {
+   font-style: italic;
+   color: #aaa;
+}
+.inputWrapper input::-moz-placeholder {
+   font-style: italic;
+   color: #aaa;
+}
+.inputWrapper input:-ms-input-placeholder {
+   font-style: italic;
+   color: #aaa;
+}
+
+.inputWrapper input[type="file"] {
+  padding: 0.5rem 1rem;
+}
+
+.inputWrapper input[type="range"] {
+  background-color: wagtail_dark_green;
+  padding: 0;
+  height: 3px;
+  border: none;
+}
+
+.inputWrapper input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: wagtail_green;
+  border-radius: 25px;
+}
+
+.inputWrapper input[type="range"]::-moz-slider-thumb {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: wagtail_green;
+  border-radius: 25px;
+}
+
+.rangeValue {
+  background-color: #fff;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  margin-right: 1rem;
+  border-radius: 0 3px 3px 0;
+}
+
+.labelPill {
+  display: inline-block;
+}
+
+.labelPillInner {
+  display: flex;
+  min-height: input_height;
+}
+
+.inputWrapper input[type="text"].imagePaste {
+  border-radius: 3px;
+  width: 10rem;
+  margin-left: 1rem;
+  text-align: center;
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 #333;
+}
+
+.inputWrapper input[type="text"].imagePaste:hover {
+    border: 2px solid wagtail_green;
+}
+
+.inputWrapper input[type="text"].imagePaste:focus {
+  border: 1px solid wagtail_green;
+  background-color: wagtail_green;
+  text-shadow: 0 0 0 #fff;
+  cursor: default;
+}

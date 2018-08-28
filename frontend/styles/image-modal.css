@@ -1,0 +1,15 @@
+.imageModal {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+.imageModal h1 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.imageModal p {
+  color: #fff;
+}

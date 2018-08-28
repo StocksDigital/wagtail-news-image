@@ -1,0 +1,38 @@
+{
+  "name": "WagtailNewsImage",
+  "version": "0.1.0",
+  "author": "Matthew Segal",
+  "license": "ISC",
+  "scripts": {
+    "watch": "webpack --config webpack.config.js --mode development --progress --watch",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "spark-md5": "^3.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+/* Image embed */
+.block {
+  background-color: #eee;
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+}
+.block:hover {
+  background-color: #ccc;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.wrapper img {
+  height: auto;
+}
+.wrapper p {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0;
+  padding: 0.3rem 0;
+}
+
+.placeholder {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 128px;
+  width: 100%;
+}
